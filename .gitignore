@@ -62,3 +62,4 @@ config/secrets.yml
 
 # ignore jpg files
 public/uploads/product/image/*.jpg
+public/uploads/product/
