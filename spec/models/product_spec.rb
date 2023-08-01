@@ -49,7 +49,10 @@ RSpec.describe Product, type: :model do
         quantity: 10
       )
       expect(product.save).to be false
-      expect(product.errors.full_messages).to include("Category must exist", "Category can't be blank")
+      expect(product.errors.full_messages).to include(
+        "Category must exist", 
+        "Category can't be blank"
+      )
     end
 
   end
